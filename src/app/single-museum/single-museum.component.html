@@ -1,0 +1,36 @@
+<article class="card mb-3 shadow-sm">
+
+  <div class="card-body bg-light">
+
+    <div class="card-title">
+      <h2 class="font-weight-bold h5 mb-4">{{museum.name}}</h2>
+    </div>
+
+    <div class="">
+      <!-- PHOTO -->
+    </div>
+
+    <!-- Localisation -->
+    <div class="row mb-3">
+      <div class="col-1">
+        📍
+      </div>
+      <div class="col-10">
+        <p class="card-text">
+          {{museum.city | titlecase}}
+        </p>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-1">
+        ➕
+      </div>
+      <div class="col-10">
+        <p class="card-text"><a [routerLink]="['/museum/', museum._id]" class="card-link">Voir plus</a></p>
+      </div>
+    </div>
+
+  </div>
+
+</article>
